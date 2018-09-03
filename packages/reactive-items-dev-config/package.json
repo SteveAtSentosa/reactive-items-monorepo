@@ -1,0 +1,10 @@
+{
+  "name": "reactive-items-dev-config",
+  "version": "1.0.0",
+  "description": "Dev config common to al reactive-items repos",
+  "files": [
+    "babel.config-base.js",
+    "babel.config-react.js",
+    "eslint.config.js"
+  ]
+}

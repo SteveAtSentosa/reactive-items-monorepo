@@ -1,0 +1,35 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "cd packages/reactive-items-demo && yarn start",
+    "start:prod": "cd packages/reactive-items-demo && yarn start:dev",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "build:items": "cd packages/reactive-items && yarn build",
+    "clean:all": "yarn clean; yarn clean:modules",
+    "clean:modules": "lerna clean -y; rm -rf ./node_modules",
+    "bootstrap": "yarn clean:all && lerna bootstrap && yarn build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.1",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "lerna": "^3.2.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  }
+}

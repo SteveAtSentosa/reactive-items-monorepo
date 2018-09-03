@@ -1,0 +1,32 @@
+{
+  "name": "reactive-items",
+  "version": "1.0.0",
+  "description": "React components for creating really cool lists of items",
+  "main": "src/index.js",
+  "author": "Steven Saunders",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn clean && cross-env NODE_ENV=production webpack",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "ramda": "^0.25.0",
+    "ramda-adjunct": "^2.9.0",
+    "ramda-lens-groups": "^1.2.3",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "cross-env": "^5.2.0",
+    "reactive-items-dev-config": "^1.0.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.4.2"
+  }
+}
