@@ -7,5 +7,5 @@ const rootDoc = path.join(__dirname, 'dist');
 app.use(express.static(rootDoc));
 app.get('*', (req, res) => res.sendFile(path.join(rootDoc, 'index.html')));
 
-const port = 3000;
+const port = 3001;
 const server = app.listen(port, ()=>console.log(`Starting server on port ${[port]}`));
